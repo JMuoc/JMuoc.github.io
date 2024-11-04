@@ -7,43 +7,66 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
         }
         header {
-            background: #0077cc;
+            background: linear-gradient(135deg, #0077cc, #005fa3);
             color: white;
-            padding: 20px 0;
+            padding: 30px 0;
             text-align: center;
         }
         nav {
             margin: 20px 0;
         }
         nav a {
-            color: #0077cc;
+            color: white;
             margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
         }
         section {
-            padding: 20px;
-            margin: 10px auto;
-            max-width: 800px;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 900px;
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+        }
+        section h2 {
+            border-bottom: 2px solid #0077cc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #0077cc;
         }
         footer {
             text-align: center;
-            margin: 20px 0;
+            margin: 30px 0;
             font-size: 0.9em;
         }
         iframe {
             border: none;
             width: 100%;
             height: 600px; /* Adjust height as needed */
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            section {
+                margin: 10px;
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -52,7 +75,7 @@
         <h1>UOC: Visualització de dades PAC2</h1>
         <nav>
             <a href="#about">About</a>
-            <a href="#projects">Projects</a>
+            <a href="#projects">Visualitzacions</a> <!-- Updated to "Visualitzacions" -->
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -63,17 +86,11 @@
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>Visualitzacions</h2> <!-- Updated heading -->
         <p>Here is my interactive plot:</p>
         
         <!-- Embed the Plotly plot -->
         <iframe src="plot.html" title="Life Expectancy vs GDP per Capita"></iframe>
-
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
     </section>
 
     <footer>
@@ -81,4 +98,3 @@
     </footer>
 </body>
 </html>
-
