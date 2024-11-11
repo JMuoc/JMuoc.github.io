@@ -1,3 +1,3 @@
 # Welcome to My GitHub Page!
 
-This is a basic website hosted on GitHub Pages.
+This is a basic website for academic purposes.
